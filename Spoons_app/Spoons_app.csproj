@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{71EDEE47-C892-4F91-B481-A1DE9C21DDFF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Spoons_app</RootNamespace>
+    <AssemblyName>Spoons_app</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="authForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="authForm.Designer.cs">
+      <DependentUpon>authForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="productsViewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="productsViewForm.Designer.cs">
+      <DependentUpon>productsViewForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="productsWorkForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="productsWorkForm.Designer.cs">
+      <DependentUpon>productsWorkForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="authForm.resx">
+      <DependentUpon>authForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="productsViewForm.resx">
+      <DependentUpon>productsViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="productsWorkForm.resx">
+      <DependentUpon>productsWorkForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\B736H6.jpg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\B736H6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\D735T5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\E732R7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\F573T5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\G387Y6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\H384H3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\K437E6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\R836H6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T793T4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\А112Т4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picture.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
